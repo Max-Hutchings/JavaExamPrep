@@ -24,6 +24,18 @@ if(b =! c){}
 // This is not the correct way aroung. 
 // Should be if (b!=c) []
 ```
+
+4. Incorrect brackets 
+```java
+1 if (true == false)
+2    i ++;
+3    j ++;
+4 else {}...
+// Compilation error on line 4 where it gets unexpected else. It expected {} befor ethen.
+```
+
+
+
 ### Illegal state exception
 - The IllegalStateException is a runtime exception in Java. It is thrown to indicate that a method has been invoked at an illegal or inappropriate time.
 - For example, calling a method on an object that requires the object to be in a certain state (like being initialized), but the object is not yet in that state.
