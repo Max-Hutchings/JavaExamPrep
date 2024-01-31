@@ -20,10 +20,34 @@ class A{
 ### Overloaded methods
 1. Where lots of the same method have different inputs.
 2. The main() method can be overloaded.
-3. Subclasses can overload superclass methods.
-4. Overloaded methods can be final.
-4. Overloaded methods can be synchronized: In Java, the term "synchronized" is a keyword that is used as a modifier for methods and blocks. When a method is declared as synchronized, it means that only one thread at a time can access and execute that method on the same object. This is used to prevent race conditions in multi-threaded environments.
-2. If null is the input for an overloaded method, the method with the most specified input will be called.
+3. The Number class is used for floats and doubles. Therefore, an intput of Number in an overloaded method will take 
+   all the floats and doubles. 
+   ```java
+    public class A {
+   
+    public static void getVal(Number a){
+    System.out.println("I am printed");
+   }
+    
+    public static void getVal(int a){
+    
+   }
+   
+   public static void getVal(Object object){
+   }
+   
+    public static void main(String[] args){
+    getVal(1.23f);
+    getVal(1.246345445d);
+   }
+   }
+   
+   // Prints the statement. 
+    ```
+4. Subclasses can overload superclass methods.
+5. Overloaded methods can be final.
+6. Overloaded methods can be synchronized: In Java, the term "synchronized" is a keyword that is used as a modifier for methods and blocks. When a method is declared as synchronized, it means that only one thread at a time can access and execute that method on the same object. This is used to prevent race conditions in multi-threaded environments.
+7. If null is the input for an overloaded method, the method with the most specified input will be called.
 ```java
 public class Main {
     // Method with no parameters
@@ -51,4 +75,20 @@ public class Main {
 
 // This will call the display(String) method as its most specific.
 ```
+
+
+### Static 
+1. Static methods MUST use static variables.
+```java
+// This will not work as the static method cannot access non-static variables.
+public class B {
+    int a = 0;
+    static void getVal(){
+        a++;
+    }
+}
+```
+
+
+
 

@@ -4,6 +4,17 @@
 1. Returns a boolean
 2. Input: value of item in a list
 
+
+#### Array.binarySearch(a, <value>)
+1. Binary search repeadly divides the search interval in half and comparing them to match the element in the middle 
+   fo the array. 
+2. If the array/ArrayList is not sorted in order, it returns undefiend.
+```java
+Integer[] a = { 3, 4, 65,3, 1, 3, 45};
+System.out.println(Arrays.binarySearch(a, 3));
+// Prints undefined
+```
+
 #### array.get()
 - Input: The array.get() method in Java takes an integer as an argument, which represents the index of the element you want to retrieve from the ArrayList.  
 - Return: The array.get() method returns the element at the specified index in the ArrayList. If the index is out of range (index < 0 || index >= size of ArrayList), it throws an IndexOutOfBoundsException.
@@ -101,4 +112,16 @@ ArrayList<Integer> arrList5 = new ArrayList<>() {{
     add(5);
 }};
 //
+```
+
+
+### How to make List<>
+1. This will not have the array list methods
+```java
+// No array list method
+List<Integer> list = List.of(1, 2, 3, 4);
+
+// No array list methods
+List<Integer> list = Array.asList(1, 2, 3, 5);
+
 ```

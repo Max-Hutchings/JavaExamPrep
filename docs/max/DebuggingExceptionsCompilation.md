@@ -1,7 +1,7 @@
 # Exceptions, Debugging compilation
 
 ### Compilation Error (NOT EXCEPTION!)
-#### These take place when trying to compile. Exceptions are caught sooner!
+#### These take place when trying to compile. Exceptions are at runtime!
 When the program will fail to compile.
 1. e.g. assigning the wrong data type. An upper case character cannot be a primitive char
 ```java
