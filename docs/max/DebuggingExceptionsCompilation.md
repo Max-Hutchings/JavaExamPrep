@@ -142,3 +142,5 @@ catch(ArrayIndexOutOfBoundsException a){
 3. It's important to note that logical errors can be the most difficult to debug because the compiler or interpreter does not point them out. They require a good understanding of the program's intended behavior and often involve stepping through the code and checking the program's state at various points to identify where the logic is going wrong.
 
 
+### ConcurrentModificationException 
+1. Thrown when something we are iterating on is modified. 
